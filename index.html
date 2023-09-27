@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description=" content="Somos uma empresa de desenvolvimento de sistemas, voltados para área administrativa, atendendo indústrias, distribuidores (atacadistas), varejistas e prestadores de serviços">
+    <title>Formsoft Consultoria em Informática</title>
+    <link rel="icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <!--navBar-->
+    <nav class="navbar">
+      <div class="content">
+        <div class="logo"><a href="#">Formsoft</a></div>
+        <ul class="menu-list">
+          <div class="icon cancel-btn">
+            <i class="fas fa-times"></i>
+          </div>
+          <li><a href="#"></a>Início</li>
+          <li><a href="#"></a>Sobre</li>
+          <li><a href="#"></a>Produtos</li>
+          <li><a href="#"></a>Contato</li>
+        </ul>
+        <div class="icon menu-btn">
+          <i class="fas fa-bars"></i>
+        </div>
+
+      </div>
+    </nav>
+
+    <div class="banner"></div>
+    <div class="about">
+      <div class="content">
+        <div class="title">Quem Somos</div>
+        <p>Somos uma empresa de desenvolvimento de sistemas, voltados para área administrativa, atendendo indústrias, distribuidores (atacadistas), varejistas e prestadores de serviços, etc.</p>
+        <p>Com nossa experiência adquirida em 28 anos, temos como compromisso, fazer com que nossos clientes possam gerenciar seus negócios com simplicidade e rapidez, permitindo tomadas de decisões em tempo real.</p>
+        <p>Para dar maior segurança, sempre procuramos atender as necessidades do cliente com uma assessoria dinâmica, aproveitando ao máximo os recursos existentes, planejando adequadamente os investimentos na área de informática, nas proporções de suas realizações, para com isso, andarmos o mais próximo do retorno do investimento feito, com os resultados obtidos.</p>
+        <p>Uma das preocupações mais fortes da FormSoft, além da qualidade de seu serviço, é o relacionamento com nossos clientes, o qual tem de ser o mais profissional possível, procurando sempre solucionar os problemas dos clientes, fazendo um trabalho personalizado de acordo com as suas necessidades.</p>
+      </div>
+    </div>
+
+    <!--header-->
+    <!--about-->
+    <!--products-->
+    <!--clients-->
+    <!--contact-->
+
+    
+    
+<!--script-->
+<script>
+  const body = document.querySelector("body");
+  const navbar = document.querySelector(".navbar");
+  const menu = document.querySelector(".menu-list");
+  const menuBtn = document.querySelector(".menu-btn");
+  const cancelBtn = document.querySelector(".cancel-btn");
+  menuBtn.onclick = ()=>{
+    menu.classList.add("active");
+    menuBTn.classList.add("hide");
+    body.classList.add("disabledScroll");
+  }
+  cancelBtn.onclick = ()=>{
+    menu.classList.remove("active");
+    menuBTn.classList.remove("hide");
+    body.classList.remove("disabledScroll");
+  }
+
+  window.onscroll = ()=>{
+    this.scrolly > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+  }
+</script>
+
+</body>
+</html>
